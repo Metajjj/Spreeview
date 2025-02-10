@@ -10,6 +10,10 @@
 
 <nav class="@(MobileMode ? "grow flex gap-6 flex-col items-end lg:hidden p-5" : "flex grow justify-end text-nowrap gap-6 align-middle max-lg:hidden h-fit")">
     
+    <div class="flex gap-4 rounded-2xl items-center hover:bg-black/10 active:bg-black/10 transition-colors">
+        <NavLink class="p-2" href="/">Home</NavLink>
+    </div>
+
     @if (MobileMode)
     {
         <UserStatus/>
