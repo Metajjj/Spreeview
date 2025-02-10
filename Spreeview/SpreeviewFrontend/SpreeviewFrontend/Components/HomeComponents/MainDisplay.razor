@@ -4,7 +4,9 @@
 @rendermode InteractiveServer
 @inject IApiSeriesService SeriesService
 
+<HeroSection />
 <SearchBar OnSearchSubmitted="HandleSearch" />
+
 @if (series.Count > 0)
 {
     <PopularSeriesDisplay series="series" />
