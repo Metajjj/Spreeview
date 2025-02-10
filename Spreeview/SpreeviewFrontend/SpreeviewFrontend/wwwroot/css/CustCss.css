@@ -65,10 +65,14 @@ img{
 
 header, footer{ background-color:var(--oBg);}
 
-h2 [class*=text-white]{ color: var(--mFg); }
+*[theme] h2 [class*=text-white]{ color: var(--mFg); }
 
-button [class*=hover:bg-gray]:hover{
+*[theme] button [class*=hover:bg-gray]:hover{
     background-color: var(--accent);
+}
+
+*[theme] [class*=shadow-purple]{
+    box-shadow: var(--accent) 0px 10px 10px;
 }
 
 
