@@ -5,9 +5,12 @@
 		@if (string.IsNullOrEmpty(series.PosterPath) && string.IsNullOrEmpty(series.BannerPath))
 		{
 			<div class="overflow-hidden h-full">
-				<div class="h-full m-auto object-cover display-block transition-transform duration-300">
+				<div class="h-full flex flex-col items-center justify-center m-auto object-cover display-block transition-transform duration-300">
 					<div class="text-[8rem]">
 						🎬
+					</div>
+					<div class="font-bold italic">
+						@series.Name
 					</div>
 				</div>
 			</div>
