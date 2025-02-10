@@ -61,11 +61,12 @@ img{
 }
 
 *[theme] [class*=bg-black]{ background-color: var(--mFg); }
+*[theme] [class*=bg-white] { background-color: var(--mBg); }
+
 *[theme] [class*=text-white] { color: var(--mBg); }
+*[theme] [class*=text-black] { color: var(--mFg); }
 
 header, footer{ background-color:var(--oBg);}
-
-*[theme] h2[class*=text-white]{ color: var(--mFg); }
 
 *[theme] button[class*=hover:bg-gray]:hover{
     background-color: var(--accent);
@@ -78,4 +79,23 @@ header, footer{ background-color:var(--oBg);}
     box-shadow: var(--accent) 0px 5px 5px;
 }
 
+/*scrollbar*/
+::-webkit-scrollbar-thumb { background-color: var(--accent); }
+::-webkit-scrollbar-track{ background-color: var(--container); } /*trackpiece overrides track?*/
+::-webkit-scrollbar-button{background-color:var(--oFg);}
 
+
+/*burgerMenu*/
+#burgerMenu{ background-color:transparent}
+#burgerMenu:hover{
+    background-color: var(--accent);
+        
+    /*transition - direct animation*/
+    transition: background-color ease-in .6s;
+}
+
+
+/*form */
+*[theme] [class*=form-button] { background-color:var(--accent); }
+
+/*chat*/
