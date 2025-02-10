@@ -99,3 +99,4 @@ header, footer{ background-color:var(--oBg);}
 *[theme] [class*=form-button] { background-color:var(--accent); }
 
 /*chat*/
+*[theme] #Input.ChatMessage:focus { border: var(--accent) 2px 2px !important; }
