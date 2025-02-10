@@ -29,22 +29,26 @@
 
 /*var(val, defaultVal)*/
 *[theme] {
-    background-color: var(--mBg) !important;
-    color: var(--mFg) !important;
+    background-color: var(--mBg) ;
+    color: var(--mFg) ;
     text-shadow: 5px 5px 5px 5px var(--mBg);
 }
 
+span {
+    color: var(--mFg);
+}
+
 *[theme] img {
-    background-color: var(--container) !important;
+    background-color: var(--container) ;
 }
 
 *[theme] button {
-    background-color: var(--accent) !important;
+    background-color: var(--accent) ;
 }
 
 *[theme] header, *[theme] footer {
-    background-color: var(--oBg) !important;
-    color: var(--oFg) !important;
+    background-color: var(--oBg) ;
+    color: var(--oFg) ;
 }
 
 /*

@@ -17,7 +17,7 @@
 
     @if (display)
     {
-        <div style="background-color:var(--mBg); position:fixed; margin:auto auto; z-index:2; height:80vh; width:80vw; top: 10vh; left:50%; transform:translateX(-50%)">
+        <div style="background-color:var(--mBg); position:fixed; margin:auto auto; z-index:2; height:80vh; width:80vw; top: 10vh; left:50%; transform:translateX(-50%); opacity:0.95">
             <UserPrefs />
         </div>
     }
@@ -26,8 +26,8 @@
     <img style="height:50px; width:50px;" src="https://cdn.pixabay.com/photo/2016/01/03/11/24/gear-1119298_1280.png" alt="UserPrefs" @onclick="()=>{display = !display;}" />
     
     
-    <NavlistLink href="health">App Health</NavlistLink>
-    <NavlistLink href="chat">Chat</NavlistLink>
+    <NavlistLink href="health"><span>App Health</span></NavlistLink>
+    <NavlistLink href="chat"><span>Chat</span></NavlistLink>
 
     @if (!MobileMode)
     {
