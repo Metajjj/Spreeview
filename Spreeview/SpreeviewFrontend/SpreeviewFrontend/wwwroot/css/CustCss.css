@@ -98,5 +98,5 @@ header, footer{ background-color:var(--oBg);}
 /*form */
 *[theme] [class*=form-button] { background-color:var(--accent); }
 
-/*chat*/
+/*TODO chat border*/
 *[theme] #Input.ChatMessage:focus { border: var(--accent) 2px 2px !important; }
