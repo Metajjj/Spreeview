@@ -34,7 +34,7 @@
     text-shadow: 5px 5px 5px 5px var(--mBg);
 }
 
-span {
+/*span {
     color: var(--mFg);
 }
 
@@ -42,16 +42,33 @@ span {
     background-color: var(--container) ;
 }
 
-*[theme] button {
-    background-color: var(--accent) ;
-}
-
 *[theme] header, *[theme] footer {
     background-color: var(--oBg) ;
     color: var(--oFg) ;
+}*/
+
+img{
+    background-color: var(--container)
 }
 
-/*
-*[theme='light'] header { background-color: var(--hBg); color: var(--hFg); }
-*[theme='light'] footer { background-color: var(--fBg); color: var(--fFg); }
-*/
+/*TODO overwrite tailwind classes*/
+
+/* target classes that contain 'bg-purple' */
+*[theme] [class*="bg-purple"],
+*[theme] .button-purple,
+*[theme] [class*=bg-secondary] {
+    background-color: var(--accent);
+}
+
+*[theme] [class*=bg-black]{ background-color: var(--mFg); }
+*[theme] [class*=text-white] { color: var(--mBg); }
+
+header, footer{ background-color:var(--oBg);}
+
+h2 [class*=text-white]{ color: var(--mFg); }
+
+button [class*=hover:bg-gray]:hover{
+    background-color: var(--accent);
+}
+
+
