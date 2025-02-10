@@ -12,7 +12,7 @@
 		{
 			var seasonIndex = i; // Capture i in a new variable
 			var seasonNumber = @series.Seasons[seasonIndex].SeasonNumber;
-			<button class="@(currentSeason == seasonNumber ? "bg-purple-500 font-bold scale-0.8" : "bg-purple-700") w-4/5 h-[50px] lg:h-[80px] text-white flex justify-center items-center shrink-0 click-transition p-2" @onclick="() => SelectSeason(seasonNumber)">
+			<button class="@(currentSeason == seasonNumber ? "bg-purple-500 font-bold scale-0.8" : "bg-purple-700") w-4/5 h-[50px] lg:h-[80px] text-white text-lg flex justify-center items-center shrink-0 click-transition p-2" @onclick="() => SelectSeason(seasonNumber)">
 				@* <img src=@($"https://image.tmdb.org/t/p/original{series.Seasons[i-1].PosterPath}") /> *@
 				@* Season @seasonNumber *@
 				@series.Seasons[seasonIndex].SeasonName
