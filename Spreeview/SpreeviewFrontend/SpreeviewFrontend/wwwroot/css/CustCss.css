@@ -57,12 +57,19 @@ img{
 
 /* target classes that contain 'bg-purple' */
 [class*="bg-purple"],
-.button-purple,
+[class*=button-purple],
 [class*=bg-secondary] {
-    background-color: var(--accent);
+    background-color: var(--accent); padding:5px;
+    color:var(--mBg);
 }
+ 
+[class*="text-purple"]{ color: var(--accent); }
 
-[class*=bg-black]{ background-color: var(--mFg); }
+
+
+    [class*=bg-black] {
+        background-color: var(--mFg);
+    }
 [class*=bg-white] { background-color: var(--mBg); }
 
 [class*=text-white] { color: var(--mBg); }
@@ -102,3 +109,13 @@ button[class*=hover:bg-gray]:hover{
 
 /*TODO chat border*/
 [class*=focus:border-purple]:focus { border: var(--accent) dashed 10px 10px 10px !important; }
+
+
+/*nav*/
+nav [class*=TransitionMe]{ color:var(--oBg); background-color:var(--accent); }
+    nav [class*=TransitionMe]:hover {
+        color: var(--oFg);
+        background-color: var(--container);
+        transition: color linear 1s;
+        transition: background-color linear 1s;
+    }

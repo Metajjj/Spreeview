@@ -10,7 +10,7 @@
 
 <nav class="@(MobileMode ? "grow flex gap-6 flex-col items-end lg:hidden p-5" : "flex grow justify-end text-nowrap gap-6 align-middle max-lg:hidden h-fit")">
     
-    <div class="flex gap-4 rounded-2xl items-center hover:bg-black/10 active:bg-black/10 transition-colors">
+    <div class="flex gap-4 rounded-2xl items-center TransitionMe">
         <NavLink class="p-2" href="/">Home</NavLink>
     </div>
 
@@ -30,8 +30,8 @@
     <img style="height:50px; width:50px;" src="https://cdn.pixabay.com/photo/2016/01/03/11/24/gear-1119298_1280.png" alt="UserPrefs" @onclick="()=>{display = !display;}" />
     
     
-    <NavlistLink href="health"><span class="text-white">App Health</span></NavlistLink>
-    <NavlistLink href="chat"><span class="text-white">Chat</span></NavlistLink>
+    <NavlistLink href="health">App Health</NavlistLink>
+    <NavlistLink href="chat">Chat</NavlistLink>
 
     @if (!MobileMode)
     {
