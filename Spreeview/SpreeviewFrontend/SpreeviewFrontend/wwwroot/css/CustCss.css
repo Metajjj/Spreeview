@@ -47,6 +47,8 @@
     color: var(--oFg) ;
 }*/
 
+
+
 img{
     background-color: var(--container)
 }
@@ -54,28 +56,28 @@ img{
 /*TODO overwrite tailwind classes*/
 
 /* target classes that contain 'bg-purple' */
-*[theme] [class*="bg-purple"],
-*[theme] .button-purple,
-*[theme] [class*=bg-secondary] {
+[class*="bg-purple"],
+.button-purple,
+[class*=bg-secondary] {
     background-color: var(--accent);
 }
 
-*[theme] [class*=bg-black]{ background-color: var(--mFg); }
-*[theme] [class*=bg-white] { background-color: var(--mBg); }
+[class*=bg-black]{ background-color: var(--mFg); }
+[class*=bg-white] { background-color: var(--mBg); }
 
-*[theme] [class*=text-white] { color: var(--mBg); }
-*[theme] [class*=text-black] { color: var(--mFg); }
+[class*=text-white] { color: var(--mBg); }
+[class*=text-black] { color: var(--mFg); }
 
 header, footer{ background-color:var(--oBg);}
 
-*[theme] button[class*=hover:bg-gray]:hover{
+button[class*=hover:bg-gray]:hover{
     background-color: var(--accent);
 }
 
-*[theme] [class*=shadow-purple]{
+[class*=shadow-purple]{
     box-shadow: var(--accent) 0px 10px 10px;
 }
-*[theme] [class*=shadow-purple-small] {
+[class*=shadow-purple-small] {
     box-shadow: var(--accent) 0px 5px 5px;
 }
 
@@ -96,7 +98,7 @@ header, footer{ background-color:var(--oBg);}
 
 
 /*form */
-*[theme] [class*=form-button] { background-color:var(--accent); }
+[class*=form-button] { background-color:var(--accent); }
 
 /*TODO chat border*/
-*[theme] #Input.ChatMessage:focus { border: var(--accent) 2px 2px !important; }
+[class*=focus:border-purple]:focus { border: var(--accent) dashed 10px 10px 10px !important; }
