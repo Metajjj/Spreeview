@@ -11,7 +11,7 @@
 				<img 
 					src=@($"https://image.tmdb.org/t/p/w500{series.BannerPath}") 
 					srcset=@($"https://image.tmdb.org/t/p/w500{series.BannerPath} 500w, https://image.tmdb.org/t/p/w780{series.BannerPath} 780w, https://image.tmdb.org/t/p/w1280{series.BannerPath} 1280w, https://image.tmdb.org/t/p/original{series.BannerPath} 1920w") 
-					sizes="(max-width: 600px) 500px, (max-width: 1200px) 780px, 1280px" 
+					sizes="(max-width: 600px) 500px, (max-width: 1200px) 1080px, 1920px" 
 					class="w-full flex-shrink-0 object-cover" 
 					alt="Banner Carousel" 
 					@onclick="() => Redirect(series.Id)" 
