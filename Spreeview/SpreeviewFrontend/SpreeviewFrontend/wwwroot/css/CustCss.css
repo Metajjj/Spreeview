@@ -120,3 +120,11 @@ button[class*=hover:bg-gray]:hover{
 
 /*for bottom div*/
 *[class*=bg-gray] { background-color: var(--oFg); }
+*[class*=text-gray] {color:var(--oFg);}
+
+/*hero section gradient shift*/
+.gradient-text {
+    background: linear-gradient(to right, var(--mFg), var(--accent)); /* gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
