@@ -66,10 +66,7 @@ img{
 [class*="text-purple"]{ color: var(--accent); }
 
 
-
-    [class*=bg-black] {
-        background-color: var(--mFg);
-    }
+[class*=bg-black] { background-color: var(--mFg); }
 [class*=bg-white] { background-color: var(--mBg); }
 
 [class*=text-white] { color: var(--mBg); }
@@ -107,15 +104,19 @@ button[class*=hover:bg-gray]:hover{
 /*form */
 [class*=form-button] { background-color:var(--accent); }
 
-/*TODO chat border*/
-[class*=focus:border-purple]:focus { border: var(--accent) dashed 10px 10px 10px !important; }
+/*chat border -- 'Input.ChatMessage' fullstop broke CSS selector */
+#InputChatMessage{ color:var(--accent); }
+#InputChatMessage:focus { border: var(--accent) solid 1px !important; }
 
 
 /*nav*/
-nav [class*=TransitionMe]{ color:var(--oBg); background-color:var(--accent); }
-    nav [class*=TransitionMe]:hover {
-        color: var(--oFg);
-        background-color: var(--container);
-        transition: color linear 1s;
-        transition: background-color linear 1s;
-    }
+* [class*=TransitionMe]{ color:var(--oBg); background-color:var(--accent); }
+* [class*=TransitionMe]:hover {
+    color: var(--oFg);
+    background-color: var(--container);
+    transition: color linear 1s;
+    transition: background-color linear 1s;
+}
+
+/*for bottom div*/
+*[class*=bg-gray] { background-color: var(--oFg); }
