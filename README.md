@@ -29,8 +29,8 @@ Spreeview aims to create an engaging community for TV series enthusiasts. Users 
 - **Frontend**: Blazor, Tailwind CSS
 - **Authentication**: ASP.NET Core Identity
 - **External API**: TMDb API
-- **Database**: SQL Server
-- **Hosting**: Azure (Optional)
+- **Database**: AWS SQL EXPRESS RDS Instance
+- **Hosting**: AWS EC2 (future implementation)
 
 ## Installation
 ### Prerequisites
@@ -98,7 +98,7 @@ Spreeview aims to create an engaging community for TV series enthusiasts. Users 
     ```
 
 ## Usage
-1. Open your browser and navigate to `http://localhost:5000` for the backend and `http://localhost:5001` for the frontend.
+1. Open your browser and navigate to `https://localhost:7119` for the backend and `http://localhost:5075` for the frontend.
 2. Register a new account or log in with existing credentials.
 3. Explore trending and popular TV series, post reviews, and engage in discussions.
 
@@ -109,8 +109,9 @@ Contributions may be opened in the future but for now, please raise an issue and
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contributors 🔗
-[![Static Badge](https://img.shields.io/badge/Syntrice-purple?style=for-the-badge)](https://github.com/Syntrice)
-[![Static Badge](https://img.shields.io/badge/thecodingrunner-purple?style=for-the-badge)](https://github.com/thecodingrunner)
-[![Static Badge](https://img.shields.io/badge/cghlee-purple?style=for-the-badge)](https://github.com/cghlee)
-[![Static Badge](https://img.shields.io/badge/Metajjj-purple?style=for-the-badge)](https://github.com/Metajjj)
-[![Static Badge](https://img.shields.io/badge/nick%20midmore-purple?style=for-the-badge)](https://github.com/nick-midmore)
+- [![Static Badge](https://img.shields.io/badge/Syntrice-purple?style=for-the-badge)](https://github.com/Syntrice)
+- [![Static Badge](https://img.shields.io/badge/thecodingrunner-purple?style=for-the-badge)](https://github.com/thecodingrunner)
+- [![Static Badge](https://img.shields.io/badge/cghlee-purple?style=for-the-badge)](https://github.com/cghlee)
+- [![Static Badge](https://img.shields.io/badge/Metajjj-purple?style=for-the-badge)](https://github.com/Metajjj)
+- [![Static Badge](https://img.shields.io/badge/nick%20midmore-purple?style=for-the-badge)](https://github.com/nick-midmore)
+
